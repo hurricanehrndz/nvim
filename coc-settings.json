@@ -1,0 +1,89 @@
+{
+  "workspace.ignoredFiletypes": [
+    "log","txt","help"
+  ],
+  "python.linting.flake8Enabled": true,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "vim"
+  ],
+  "list.normalMappings": {
+    "<C-c>": "do:exit"
+  },
+  "list.insertMappings": {
+    "<C-c>": "do:exit"
+  },
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "yaml.ansible": ["ansible"],
+    "yaml":["ansible"]
+  },
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.enableVimDevions": true,
+  "explorer.sources":[
+    {
+      "name": "buffer",
+      "expand": true
+    },
+    {
+      "name": "file",
+      "expand": true
+    }
+  ],
+  "explorer.keyMappings": {
+    "*": "toggleSelection",
+    "<tab>": "actionMenu",
+
+    "h": "shrink",
+    "l": "expand",
+    "J": ["toggleSelection", "normal:j"],
+    "K": ["toggleSelection", "normal:k"],
+    "gl": "expandRecursive",
+    "gh": "shrinkRecursive",
+    "o": "expandOrShrink",
+    "<cr>": "open",
+    "e": "open",
+    "E": "openInVsplit",
+    "t": "openInTab",
+    "<bs>": "gotoParent",
+
+    "y": "copyFilepath",
+    "Y": "copyFilename",
+    "c": "copyFile",
+    "x": "cutFile",
+    "p": "pasteFile",
+    "d": "delete",
+    "D": "deleteForever",
+
+    "a": "addFile",
+    "A": "addDirectory",
+    "r": "rename",
+
+    ".": "toggleHidden",
+    "R": "refresh",
+
+    "?": "help",
+    "q": "quit",
+    "X": "systemExecute",
+    "gd": "listDrive",
+
+    "f": "search",
+    "F": "searchRecursive",
+
+    "gf": "gotoSource:file",
+    "gb": "gotoSource:buffer",
+
+    "[[": "sourcePrev",
+    "]]": "sourceNext",
+
+    "[d": "diagnosticPrev",
+    "]d": "diagnosticNext",
+
+    "[c": "gitPrev",
+    "]c": "gitNext",
+    "<<": "gitStage",
+    ">>": "gitUnstage"
+  }
+}
