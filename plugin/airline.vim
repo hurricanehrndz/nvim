@@ -43,5 +43,5 @@ if &runtimepath =~? 'plugged/vim-airline'
     \}
   let g:airline#extensions#coc#enabled = 1
   let g:airline#extensions#tabline#keymap_ignored_filetypes =
-    \ ['vimfiler', 'nerdtree', 'coc-explorer']
+    \ ['vimfiler', 'nerdtree', 'coc-explorer', 'fugitive']
 endif
