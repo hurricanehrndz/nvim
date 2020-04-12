@@ -30,6 +30,8 @@ func! plugins#spec() abort
     Plug 'ararslan/license-to-vim'
     " delete and kill buffers
     Plug 'qpkorr/vim-bufkill'
+    " sudo
+    Plug 'lambdalisue/suda.vim'
     " }}}
 
 
