@@ -1,0 +1,5 @@
+require('opts')
+require('keys')
+require('autocmds')
+require('plugsmgr')
+require('plugs')
