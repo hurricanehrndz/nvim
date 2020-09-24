@@ -31,19 +31,28 @@ function Terminal.get_bufnr_by_pattern(name_pattern)
   return nil
 end
 
+function Terminal:delete_unamed_terms()
+  repeat
+    local bufnr = self.get_bufnr_by_pattern("term://.*")
+    vim.cmd("bwipeout! " .. bufnr)
+  until(self.get_bufnr_by_pattern("term://.*") == null)
+end
+
 function Terminal:exists()
   return self.get_bufnr_by_pattern(self.buf_name)
 end
 
 function Terminal:is_loaded()
-  local bufnr = self.get_bufnr_by_pattern(self.buf_name)
-  return api.nvim_buf_is_loaded(bufnr)
+  local winnr = self.winnr(self.buf_name)
+  return winnr ~= null
 end
 
 function Terminal:create()
   vim.cmd("botright new +resize" .. self.win_height)
   fn["termopen"](vim.env.SHELL)
   api.nvim_buf_set_name(0, self.buf_name)
+  vim.bo.buflisted = false
+  self:delete_unamed_terms()
 end
 
 function Terminal:reload()
