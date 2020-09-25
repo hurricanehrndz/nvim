@@ -1,10 +1,10 @@
-bo = require('lib/bufopt')
+local bo = require("lib.bufopt")
 
 -->> window-scoped options <<--
 -- show line numbers
 vim.wo.number = true
 -- always have sign column
-vim.wo.signcolumn = 'yes'
+vim.wo.signcolumn = "yes"
 -- disable line wrap
 vim.wo.wrap = false
 
@@ -24,7 +24,7 @@ vim.o.ignorecase = true
 -- highlight searches
 vim.o.hlsearch = true
 -- copy-paste with system clipboard
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = "unnamedplus"
 -- some language servers dont like backup files
 vim.o.backup = false
 vim.o.writebackup = false
