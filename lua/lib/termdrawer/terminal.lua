@@ -1,5 +1,5 @@
-api = vim.api
-fn = vim.fn
+local api = vim.api
+local fn = vim.fn
 
 Terminal = {}
 Terminal.__index = Terminal
@@ -48,16 +48,18 @@ function Terminal:is_loaded()
 end
 
 function Terminal:create()
-  vim.cmd("botright new +resize" .. self.win_height)
+  api.nvim_command("botright new +resize" .. self.win_height)
   fn["termopen"](vim.env.SHELL)
   api.nvim_buf_set_name(0, self.buf_name)
   vim.bo.buflisted = false
   self:delete_unamed_terms()
+  vim.cmd("startinsert")
 end
 
 function Terminal:reload()
   vim.cmd("silent! botright sbuffer +resize" ..
     self.win_height .. " " .. self.buf_name)
+  vim.cmd("startinsert")
 end
 
 function Terminal:load()
@@ -80,3 +82,5 @@ function Terminal:toggle()
     self:load()
   end
 end
+
+return Terminal
