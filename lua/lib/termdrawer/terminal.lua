@@ -63,6 +63,7 @@ function Terminal:reload()
 end
 
 function Terminal:load()
+  self:close_all()
   if not self:exists() then
     self:create()
   else
@@ -73,6 +74,16 @@ end
 function Terminal:close()
   local winnr = self.winnr(self.buf_name)
   api.nvim_win_close(winnr, false)
+end
+
+function Terminal:close_all()
+  repeat
+    local buf_pattern = "ToggleTerm.*"
+    local winnr = self.winnr(buf_pattern)
+    if winnr ~= null then
+      api.nvim_win_close(winnr, false)
+    end
+  until(self.winnr(buf_pattern) == null)
 end
 
 function Terminal:toggle()
