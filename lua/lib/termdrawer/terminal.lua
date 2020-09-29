@@ -48,7 +48,7 @@ function Terminal:is_loaded()
 end
 
 function Terminal:create()
-  api.nvim_command("botright new +resize" .. self.win_height)
+  vim.cmd("botright new +resize" .. self.win_height)
   fn["termopen"](vim.env.SHELL)
   api.nvim_buf_set_name(0, self.buf_name)
   vim.bo.buflisted = false
