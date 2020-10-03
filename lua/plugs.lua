@@ -12,6 +12,9 @@ vim.cmd("Plug 'vim-airline/vim-airline-themes'")
 vim.cmd("Plug 'vim-airline/vim-airline-themes'")
 vim.cmd("Plug 'ryanoasis/vim-devicons'")
 
+-- lsp
+vim.cmd("Plug 'neovim/nvim-lspconfig'")
+
 fn["plug#end"]()
 
 -- import plugs settings
