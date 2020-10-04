@@ -31,6 +31,8 @@ vim.o.writebackup = false
 -- scrolling "bounding"
 vim.o.scrolloff = 5
 vim.o.sidescrolloff = 10
+-- completion
+vim.o.completeopt = "menuone,noinsert,noselect"
 
 
 -->> buffer-scoped options <<--
