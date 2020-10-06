@@ -10,20 +10,6 @@ api.nvim_set_keymap("n", "<leader>kj", "<cmd>lua termdrawer.toggle(2)<CR>", {nor
 api.nvim_set_keymap("n", "<leader>kk", "<cmd>lua termdrawer.toggle(2)<CR>", {noremap = true})
 api.nvim_set_keymap("n", "<leader>kl", "<cmd>lua termdrawer.toggle(2)<CR>", {noremap = true})
 
--- Airline keybinds
-api.nvim_set_keymap("n", "<leader>1", "<Plug>AirlineSelectTab1", {})
-api.nvim_set_keymap("n", "<leader>2", "<Plug>AirlineSelectTab2", {})
-api.nvim_set_keymap("n", "<leader>3", "<Plug>AirlineSelectTab3", {})
-api.nvim_set_keymap("n", "<leader>4", "<Plug>AirlineSelectTab4", {})
-api.nvim_set_keymap("n", "<leader>5", "<Plug>AirlineSelectTab5", {})
-api.nvim_set_keymap("n", "<leader>6", "<Plug>AirlineSelectTab6", {})
-api.nvim_set_keymap("n", "<leader>7", "<Plug>AirlineSelectTab7", {})
-api.nvim_set_keymap("n", "<leader>8", "<Plug>AirlineSelectTab8", {})
-api.nvim_set_keymap("n", "<leader>9", "<Plug>AirlineSelectTab9", {})
-api.nvim_set_keymap("n", "<leader>0", "<Plug>AirlineSelectTab0", {})
-api.nvim_set_keymap("n", "<leader>-", "<Plug>AirlineSelectPrevTab", {})
-api.nvim_set_keymap("n", "<leader>=", "<Plug>AirlineSelectNextTab", {})
-
 -- use jk for escape
 api.nvim_set_keymap("i", "jk", "<ESC>", {noremap = true})
 
