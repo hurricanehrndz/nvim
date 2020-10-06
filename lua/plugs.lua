@@ -21,6 +21,9 @@ vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
 vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")
 vim.cmd("Plug 'junegunn/fzf.vim'")
 
+-- Language Syntax Support
+vim.cmd("Plug 'sheerun/vim-polyglot'")
+
 fn["plug#end"]()
 
 -- import plugs settings
