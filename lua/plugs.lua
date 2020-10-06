@@ -17,8 +17,13 @@ vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
 
+-- fzf
+vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")
+vim.cmd("Plug 'junegunn/fzf.vim'")
+
 fn["plug#end"]()
 
 -- import plugs settings
 require("plugs.theme")
 require("plugs.airline")
+require("plugs.fzf")
