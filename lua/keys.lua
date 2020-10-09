@@ -35,6 +35,9 @@ api.nvim_set_keymap("t", "<A-j>", [[<C-\><C-N><C-w>j]], {noremap = true})
 api.nvim_set_keymap("t", "<A-k>", [[<C-\><C-N><C-w>k]], {noremap = true})
 api.nvim_set_keymap("t", "<A-l>", [[<C-\><C-N><C-w>l]], {noremap = true})
 
+-- save with zz
+api.nvim_set_keymap("n", "zz", "<cmd>update<cr>", {noremap = true})
+api.nvim_set_keymap("n", "<leader>zz", "<cmd>SudaWrite<cr>", {noremap = true})
 
 -- keybind disable hightlights
 api.nvim_set_keymap("n", "<leader>l", "<cmd>nohlsearch<cr>", {noremap = true})
