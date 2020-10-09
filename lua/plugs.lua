@@ -24,6 +24,7 @@ vim.cmd("Plug 'junegunn/fzf.vim'")
 -- Language Syntax Support
 vim.cmd("Plug 'sheerun/vim-polyglot'")
 vim.cmd("Plug 'prettier/vim-prettier', { 'do': 'yarn install' }")
+vim.cmd("Plug 'ntpeters/vim-better-whitespace'")
 
 -- Tools
 vim.cmd("Plug 'tpope/vim-fugitive'")

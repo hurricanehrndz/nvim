@@ -33,6 +33,8 @@ vim.o.scrolloff = 5
 vim.o.sidescrolloff = 10
 -- completion
 vim.o.completeopt = "menuone,noinsert,noselect"
+-- strings to use in list command for punctuation
+vim.o.listchars = [[tab:→ ,eol:↲,space:␣,trail:•,extends:⟩,precedes:⟨]]
 
 
 -->> buffer-scoped options <<--
