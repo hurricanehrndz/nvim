@@ -39,5 +39,8 @@ api.nvim_set_keymap("t", "<A-l>", [[<C-\><C-N><C-w>l]], {noremap = true})
 api.nvim_set_keymap("n", "zz", "<cmd>update<cr>", {noremap = true})
 api.nvim_set_keymap("n", "<leader>zz", "<cmd>SudaWrite<cr>", {noremap = true})
 
+-- close with x
+api.nvim_set_keymap("n", "<leader>x", "<cmd>close<cr>", {noremap = true})
+
 -- keybind disable hightlights
 api.nvim_set_keymap("n", "<leader>l", "<cmd>nohlsearch<cr>", {noremap = true})
