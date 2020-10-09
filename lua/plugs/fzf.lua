@@ -13,7 +13,7 @@ local autocmds = {
 create_augroups(autocmds)
 
 -- create key mappings
-api.nvim_set_keymap("n", "<leader>p", ":Files<cr>", {noremap = true})
+api.nvim_set_keymap("n", "<c-p>", ":Files<cr>", {noremap = true})
 
 vim.g.fzf_layout = {
   window = {                                                                                                                                                                           
