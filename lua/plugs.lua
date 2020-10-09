@@ -23,6 +23,7 @@ vim.cmd("Plug 'junegunn/fzf.vim'")
 
 -- Language Syntax Support
 vim.cmd("Plug 'sheerun/vim-polyglot'")
+vim.cmd("Plug 'prettier/vim-prettier', { 'do': 'yarn install' }")
 
 fn["plug#end"]()
 
@@ -30,3 +31,4 @@ fn["plug#end"]()
 require("plugs.theme")
 require("plugs.airline")
 require("plugs.fzf")
+require("plugs.prettier")
