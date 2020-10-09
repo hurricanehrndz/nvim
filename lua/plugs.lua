@@ -25,6 +25,14 @@ vim.cmd("Plug 'junegunn/fzf.vim'")
 vim.cmd("Plug 'sheerun/vim-polyglot'")
 vim.cmd("Plug 'prettier/vim-prettier', { 'do': 'yarn install' }")
 
+-- Tools
+vim.cmd("Plug 'tpope/vim-fugitive'")
+vim.cmd("Plug 'tpope/vim-surround'")
+vim.cmd("Plug 'tpope/vim-commentary'")
+vim.cmd("Plug 'mhinz/vim-startify'")
+vim.cmd("Plug 'airblade/vim-gitgutter'")
+vim.cmd("Plug 'lambdalisue/suda.vim'")
+
 fn["plug#end"]()
 
 -- import plugs settings
