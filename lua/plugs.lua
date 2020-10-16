@@ -33,6 +33,7 @@ vim.cmd("Plug 'tpope/vim-commentary'")
 vim.cmd("Plug 'mhinz/vim-startify'")
 vim.cmd("Plug 'airblade/vim-gitgutter'")
 vim.cmd("Plug 'lambdalisue/suda.vim'")
+vim.cmd("Plug 'mattn/emmet-vim'")
 
 fn["plug#end"]()
 
@@ -41,3 +42,4 @@ require("plugs.theme")
 require("plugs.airline")
 require("plugs.fzf")
 require("plugs.prettier")
+require("plugs.emmet")
