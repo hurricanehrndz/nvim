@@ -27,5 +27,7 @@ end
 require("nvim_lsp").tsserver.setup{on_attach=on_attach_vim}
 -- completion message
 vim.o.shortmess = vim.o.shortmess .. "c"
+-- completion settings
+vim.o.completeopt = "menuone,noinsert,noselect"
 -- disable insert completion menu messages
 vim.o.shortmess = vim.o.shortmess .. "c"
