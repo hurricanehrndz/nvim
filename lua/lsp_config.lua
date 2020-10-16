@@ -25,8 +25,13 @@ end
 
 -- configure tsserver
 require("nvim_lsp").tsserver.setup{on_attach=on_attach_vim}
--- completion message
-vim.o.shortmess = vim.o.shortmess .. "c"
+-- python language server
+require("nvim_lsp").pyls.setup{on_attach=on_attach_vim}
+-- bash language server
+require("nvim_lsp").bashls.setup{on_attach=on_attach_vim}
+-- lua language server
+require("nvim_lsp").summeko_lua.setup{on_attach=on_attach_vim}
+
 -- completion settings
 vim.o.completeopt = "menuone,noinsert,noselect"
 -- disable insert completion menu messages
