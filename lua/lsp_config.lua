@@ -30,7 +30,16 @@ require("nvim_lsp").pyls.setup{on_attach=on_attach_vim}
 -- bash language server
 require("nvim_lsp").bashls.setup{on_attach=on_attach_vim}
 -- lua language server
-require("nvim_lsp").summeko_lua.setup{on_attach=on_attach_vim}
+require("nvim_lsp").sumneko_lua.setup{
+  on_attach=on_attach_vim,
+  settings = {
+    Lua = {
+      runtime = { version = "LuaJIT", path = vim.split(package.path, ';'), },
+      diagnostics = { enable = true, globals = { "vim" },
+      }
+    }
+  }
+}
 
 -- completion settings
 vim.o.completeopt = "menuone,noinsert,noselect"
