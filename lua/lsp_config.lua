@@ -48,3 +48,7 @@ vim.o.completeopt = "menuone,noinsert,noselect"
 vim.o.shortmess = vim.o.shortmess .. "c"
 -- completion matching strategy
 api.nvim_set_var("completion_matching_strategy_list", {"exact", "substring", "fuzzy"})
+-- completion enable diagnostics vritual text
+api.nvim_set_var("diagnostic_enable_virtual_text", 1)
+-- increase the space before diagnostic virtual text
+api.nvim_set_var("space_before_virtual_text", 5)
