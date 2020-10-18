@@ -1,4 +1,5 @@
 local map = require("lib.buf_nmap")
+local api = vim.api
 
 -- lsp configuration
 local on_attach_vim = function(client)
@@ -45,3 +46,5 @@ require("nvim_lsp").sumneko_lua.setup{
 vim.o.completeopt = "menuone,noinsert,noselect"
 -- disable insert completion menu messages
 vim.o.shortmess = vim.o.shortmess .. "c"
+-- completion matching strategy
+api.nvim_set_var("completion_matching_strategy_list", {"exact", "substring", "fuzzy"})
