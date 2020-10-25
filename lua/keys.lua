@@ -1,7 +1,7 @@
 local api = vim.api
 -- set leader key to space
-vim.g.mapleader = " "
-vim.b.mapleader = " "
+vim.g.mapleader = ","
+vim.b.mapleader = ","
 
 -- Toggle Terminal (Drawer)
 termdrawer = require("lib.termdrawer")
@@ -37,7 +37,7 @@ api.nvim_set_keymap("t", "<A-l>", [[<C-\><C-N><C-w>l]], {noremap = true})
 
 -- save with zz
 api.nvim_set_keymap("n", "zz", "<cmd>update<cr>", {noremap = true})
-api.nvim_set_keymap("n", "<leader>zz", "<cmd>SudaWrite<cr>", {noremap = true})
+api.nvim_set_keymap("n", "<space>zz", "<cmd>SudaWrite<cr>", {noremap = true})
 
 -- close with x
 api.nvim_set_keymap("n", "<leader>x", "<cmd>close<cr>", {noremap = true})
