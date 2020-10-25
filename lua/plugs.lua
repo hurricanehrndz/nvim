@@ -16,6 +16,7 @@ vim.cmd("Plug 'ryanoasis/vim-devicons'")
 vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
+vim.cmd("Plug 'steelsojka/completion-buffers'")
 
 -- telescope w/ fzf command
 vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")
