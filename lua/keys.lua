@@ -3,13 +3,6 @@ local api = vim.api
 vim.g.mapleader = ","
 vim.b.mapleader = ","
 
--- Toggle Terminal (Drawer)
-termdrawer = require("lib.termdrawer")
-api.nvim_set_keymap("n", "<leader>kh", "<cmd>lua termdrawer.toggle(1)<CR>", {noremap = true})
-api.nvim_set_keymap("n", "<leader>kj", "<cmd>lua termdrawer.toggle(2)<CR>", {noremap = true})
-api.nvim_set_keymap("n", "<leader>kk", "<cmd>lua termdrawer.toggle(2)<CR>", {noremap = true})
-api.nvim_set_keymap("n", "<leader>kl", "<cmd>lua termdrawer.toggle(2)<CR>", {noremap = true})
-
 -- use jk for escape
 api.nvim_set_keymap("i", "jk", "<ESC>", {noremap = true})
 
@@ -23,24 +16,12 @@ api.nvim_set_keymap("c", "<C-k>", "<Up>", {noremap = true})
 api.nvim_set_keymap("i", "<C-l>", "<Right>", {noremap = true})
 api.nvim_set_keymap("c", "<C-l>", "<Right>", {noremap = true})
 
--- Alt+[hjkl] navigate windows
-api.nvim_set_keymap("n", "<A-h>", "<C-w>h", {noremap = true})
-api.nvim_set_keymap("n", "<A-j>", "<C-w>j", {noremap = true})
-api.nvim_set_keymap("n", "<A-k>", "<C-w>k", {noremap = true})
-api.nvim_set_keymap("n", "<A-l>", "<C-w>l", {noremap = true})
-
--- Alt+[hjkl] navigate windows from terminal drawer
-api.nvim_set_keymap("t", "<A-h>", [[<C-\><C-N><C-w>h]], {noremap = true})
-api.nvim_set_keymap("t", "<A-j>", [[<C-\><C-N><C-w>j]], {noremap = true})
-api.nvim_set_keymap("t", "<A-k>", [[<C-\><C-N><C-w>k]], {noremap = true})
-api.nvim_set_keymap("t", "<A-l>", [[<C-\><C-N><C-w>l]], {noremap = true})
-
 -- save with zz
 api.nvim_set_keymap("n", "zz", "<cmd>update<cr>", {noremap = true})
 api.nvim_set_keymap("n", "<space>zz", "<cmd>SudaWrite<cr>", {noremap = true})
 
--- close with x
-api.nvim_set_keymap("n", "<leader>x", "<cmd>close<cr>", {noremap = true})
-
 -- keybind disable hightlights
 api.nvim_set_keymap("n", "<leader>l", "<cmd>nohlsearch<cr>", {noremap = true})
+
+-- delete buffer
+api.nvim_set_keymap("n", "<space>bd", "<cmd>bd!<cr>", {noremap = true})
