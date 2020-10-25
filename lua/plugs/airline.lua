@@ -1,12 +1,19 @@
 local api = vim.api
 -- airline theme
 api.nvim_set_var("airline_theme", "onedark")
--- enable tabline
-api.nvim_set_var("airline#extensions#tabline#enabled", 1)
--- enable powerline fonts
+-- Enable powerline fonts
 api.nvim_set_var("airline_powerline_fonts", 1)
--- buffer index format and mode
+-- show buffers
+api.nvim_set_var("airline#extensions#tabline#show_buffers", 1)
+-- disable showing tabs
+api.nvim_set_var("airline#extensions#tabline#show_tabs", 0)
+-- show tab counts
+api.nvim_set_var("airline#extensions#tabline#show_tab_count", 1)
+-- Do not show close symbol
+api.nvim_set_var("airline#extensions#tabline#show_close_button", 0)
+-- enable keybinds for bufffer jumps
 api.nvim_set_var("airline#extensions#tabline#buffer_idx_mode", 1)
+-- set format for buffer indexes
 local buffer_idx_format = {
   ["0"] = "➓ ",
   ["1"] = "➊ ",
@@ -33,3 +40,10 @@ api.nvim_set_keymap("n", " 9", "<Plug>AirlineSelectTab9", {})
 api.nvim_set_keymap("n", " 0", "<Plug>AirlineSelectTab0", {})
 api.nvim_set_keymap("n", " h", "<Plug>AirlineSelectPrevTab", {})
 api.nvim_set_keymap("n", " l", "<Plug>AirlineSelectNextTab", {})
+-- show full path in section C of statusline
+api.nvim_set_var("airline_section_c",'%F%m%r%h%w%')
+
+-- Enable tabline
+api.nvim_set_var("airline#extensions#tabline#enabled", 1)
+-- Enable bufferline in section C of airline#statusline
+api.nvim_set_var("airline#extensions#bufferline#enabled", 1)
