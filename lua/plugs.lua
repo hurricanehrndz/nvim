@@ -17,9 +17,12 @@ vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
 
--- fzf
+-- telescope w/ fzf command
 vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")
 vim.cmd("Plug 'junegunn/fzf.vim'")
+vim.cmd("Plug 'nvim-lua/popup.nvim'")
+vim.cmd("Plug 'nvim-lua/plenary.nvim'")
+vim.cmd("Plug 'nvim-lua/telescope.nvim'")
 
 -- Language Syntax Support
 vim.cmd("Plug 'sheerun/vim-polyglot'")
