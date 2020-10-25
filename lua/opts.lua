@@ -3,14 +3,14 @@ local bo = require("lib.bufopt")
 -->> window-scoped options <<--
 -- show line numbers
 vim.wo.number = true
+-- show relative numbers
+vim.wo.relativenumber = true
 -- always have sign column
 vim.wo.signcolumn = "yes"
 -- disable line wrap
 vim.wo.wrap = false
 
 -->> edior options <<--
--- better display for messages
-vim.o.cmdheight = 2
 -- abandon buffer when unloading
 vim.o.hidden = true
 -- refresh rate of diagnostic msg
