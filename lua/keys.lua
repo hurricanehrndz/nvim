@@ -1,5 +1,5 @@
 local api = vim.api
--- set leader key to space
+-- set leader key to comma
 vim.g.mapleader = ","
 vim.b.mapleader = ","
 
