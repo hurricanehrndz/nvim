@@ -13,10 +13,13 @@ local autocmds = {
 create_augroups(autocmds)
 
 -- create key mappings
-api.nvim_set_keymap("n", "<c-p>", ":Files<cr>", {noremap = true})
+-- <space>fh fuzzy find helptags
+api.nvim_set_keymap("n", " fh", [[<cmd>Helptags<CR>]], {noremap = true, silent = true})
+-- <space>fm fuzzy find nmaps
+api.nvim_set_keymap("n", " fm", [[<cmd>Maps<CR>]], {noremap = true, silent = true})
 
 vim.g.fzf_layout = {
-  window = {                                                                                                                                                                           
+  window = {
     height =  0.8,
     width = 0.8,
   }
