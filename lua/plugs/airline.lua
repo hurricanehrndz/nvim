@@ -38,8 +38,8 @@ api.nvim_set_keymap("n", " 7", "<Plug>AirlineSelectTab7", {})
 api.nvim_set_keymap("n", " 8", "<Plug>AirlineSelectTab8", {})
 api.nvim_set_keymap("n", " 9", "<Plug>AirlineSelectTab9", {})
 api.nvim_set_keymap("n", " 0", "<Plug>AirlineSelectTab0", {})
-api.nvim_set_keymap("n", " h", "<Plug>AirlineSelectPrevTab", {})
-api.nvim_set_keymap("n", " l", "<Plug>AirlineSelectNextTab", {})
+api.nvim_set_keymap("n", " mh", "<Plug>AirlineSelectPrevTab", {})
+api.nvim_set_keymap("n", " ml", "<Plug>AirlineSelectNextTab", {})
 -- show full path in section C of statusline
 api.nvim_set_var("airline_section_c",'%F%m%r%h%w%')
 
