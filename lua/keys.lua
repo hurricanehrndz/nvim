@@ -16,6 +16,9 @@ api.nvim_set_keymap("c",  "<C-k>",  "<Up>",     {noremap = true})
 api.nvim_set_keymap("i",  "<C-l>",  "<Right>",  {noremap = true})
 api.nvim_set_keymap("c",  "<C-l>",  "<Right>",  {noremap = true})
 
+-- Delete comment in insert mode
+api.nvim_set_keymap("i",  "<C-e>",  [[<CR><C-o>0<C-o>de]],  {noremap = true})
+
 -- save with zz
 api.nvim_set_keymap("n",  "zz",         "<cmd>update<cr>",     {noremap = true})
 api.nvim_set_keymap("n",  "<space>zz",  "<cmd>SudaWrite<cr>",  {noremap = true})
