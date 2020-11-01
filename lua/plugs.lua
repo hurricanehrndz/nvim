@@ -7,9 +7,6 @@ vim.cmd("Plug 'nvim-lua/completion-nvim'")
 
 -- theme and look
 vim.cmd("Plug 'joshdick/onedark.vim'")
-vim.cmd("Plug 'vim-airline/vim-airline'")
-vim.cmd("Plug 'vim-airline/vim-airline-themes'")
-vim.cmd("Plug 'vim-airline/vim-airline-themes'")
 vim.cmd("Plug 'ryanoasis/vim-devicons'")
 
 -- lsp and completion
@@ -44,7 +41,6 @@ fn["plug#end"]()
 
 -- import plugs settings
 require("plugs.theme")
-require("plugs.airline")
 require("plugs.fzf")
 require("plugs.prettier")
 require("plugs.emmet")
