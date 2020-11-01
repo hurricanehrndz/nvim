@@ -38,6 +38,7 @@ vim.cmd("Plug 'mhinz/vim-startify'")
 vim.cmd("Plug 'airblade/vim-gitgutter'")
 vim.cmd("Plug 'lambdalisue/suda.vim'")
 vim.cmd("Plug 'mattn/emmet-vim'")
+vim.cmd("Plug 'godlygeek/tabular'")
 
 fn["plug#end"]()
 
