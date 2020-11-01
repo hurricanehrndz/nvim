@@ -33,7 +33,8 @@ vim.o.scrolloff = 5
 vim.o.sidescrolloff = 10
 -- strings to use in list command for punctuation
 vim.o.listchars = [[tab:→ ,eol:↲,space:␣,trail:•,extends:⟩,precedes:⟨]]
-
+-- set max with of text
+vim.o.textwidth = 78
 
 -->> buffer-scoped options <<--
 bo.shiftwidth = 2
