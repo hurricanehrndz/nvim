@@ -8,6 +8,11 @@ local autocmds = {
   help_files = {
     {"Filetype", "help", [[noremap <buffer> <silent> <C-c> :q<cr>]]},
     {"Filetype", "help", [[noremap <buffer> <silent> q :q<cr>]]}
+  },
+  spell_files = {
+    {"Filetype", "markdown", [[setl spell spl=en]]},
+    {"Filetype", "gitcommit", [[setl spell spl=en]]},
+    {"Filetype", "gitcommit", [[setl tw=72]]},
   }
 }
 
