@@ -9,7 +9,7 @@ api.nvim_set_keymap("n", " fg", "<cmd>lua require'telescope.builtin'.git_files{}
 api.nvim_set_keymap("n", " rg", "<cmd>lua require'telescope.builtin'.live_grep{}<CR>", {noremap = true, silent = true})
 
 -- <space>bl list buffer
-api.nvim_set_keymap("n", " bl", "<cmd>lua require'telescope.builtin'.buffers{}<CR>", {noremap = true, silent = true})
+api.nvim_set_keymap("n", " bl", "<cmd>lua require'telescope.builtin'.buffers{show_all_buffers = true}<CR>", {noremap = true, silent = true})
 
 -- current buffer fuzzy finder
 api.nvim_set_keymap("n", " fz", "<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_finder{}<CR>", {noremap = true, silent = true})
