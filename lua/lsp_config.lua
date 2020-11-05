@@ -26,6 +26,46 @@ end
 
 -- enable snippets
 api.nvim_set_var("completion_enable_snippet", "UltiSnips")
+
+-- automaitcally change sources when no completion item found
+api.nvim_set_var("completion_auto_change_source", 1)
+
+-- completion list
+api.nvim_set_var(
+  "completion_chain_complete_list",
+  {
+    default = {
+      comment = {},
+      default = {
+        { complete_items = { "lsp", "snippet"} },
+        { complete_items = { "buffers"} },
+        { complete_items = { "path" } },
+        { mode = "<c-p>" },
+        { mode = "<c-n>" }
+      }
+    }
+  }
+)
+
+-- complete using various sources
+-- do I want maps to trigger completion change
+--[[
+"c-n" : i_CTRL-N
+"c-p" : i_CTRL-P
+"cmd" : i_CTRL-X_CTRL-V
+"defs": i_CTRL-X_CTRL-D
+"dict": i_CTRL-X_CTRL-K
+"file": i_CTRL-X_CTRL-F
+"incl": i_CTRL-X_CTRL-I
+"keyn": i_CTRL-X_CTRL-N
+"keyp": i_CTRL-X_CTRL-P
+"line": i_CTRL-X_CTRL-L
+"spel": i_CTRL-X_s
+"tags": i_CTRL-X_CTRL-]
+"thes": i_CTRL-X_CTRL-T
+"user": i_CTRL-X_CTRL-U
+]]--
+
 -- configure tsserver
 require("nvim_lsp").tsserver.setup{on_attach=on_attach_vim}
 -- python language server

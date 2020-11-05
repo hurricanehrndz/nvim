@@ -14,6 +14,7 @@ local autocmds = {
     {"Filetype", "gitcommit", [[setl spell spl=en]]},
     {"Filetype", "gitcommit", [[setl tw=72]]},
   },
+  -- turn on complete-nvim
   complete_all_files = {
     {"BufEnter", "*", [[lua require'completion'.on_attach()]]},
   },

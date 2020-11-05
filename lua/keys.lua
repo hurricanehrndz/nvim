@@ -28,3 +28,7 @@ api.nvim_set_keymap("n", "<leader>l", "<cmd>nohlsearch<cr>", {noremap = true})
 
 -- delete buffer
 api.nvim_set_keymap("n",  "<space>bd",  "<cmd>bd!<cr>",  {noremap = true})
+
+-- lsp sources maps
+api.nvim_set_keymap("i",  "<space>cj",  "<Plug>(completion_next_source)",  {noremap = true})
+api.nvim_set_keymap("i",  "<space>ck",  "<Plug>(completion_prev_source)",  {noremap = true})
