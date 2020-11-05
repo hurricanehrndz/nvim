@@ -10,10 +10,12 @@ vim.cmd("Plug 'joshdick/onedark.vim'")
 vim.cmd("Plug 'ryanoasis/vim-devicons'")
 
 -- lsp and completion
+-- Plugs: https://github.com/nvim-lua/completion-nvim
 vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
 vim.cmd("Plug 'steelsojka/completion-buffers'")
+vim.cmd("Plug 'SirVer/ultisnips'")
 
 -- telescope w/ fzf command
 vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")

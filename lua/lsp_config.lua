@@ -24,6 +24,8 @@ local on_attach_vim = function(client)
   -- map("n", "<space>ao", "<cmd>lua vim.lsp.buf.outgoing_calls()<CR>")
 end
 
+-- enable snippets
+api.nvim_set_var("completion_enable_snippet", "UltiSnips")
 -- configure tsserver
 require("nvim_lsp").tsserver.setup{on_attach=on_attach_vim}
 -- python language server
