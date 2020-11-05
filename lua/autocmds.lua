@@ -13,7 +13,10 @@ local autocmds = {
     {"Filetype", "markdown", [[setl spell spl=en]]},
     {"Filetype", "gitcommit", [[setl spell spl=en]]},
     {"Filetype", "gitcommit", [[setl tw=72]]},
-  }
+  },
+  complete_all_files = {
+    {"BufEnter", "*", [[lua require'completion'.on_attach()]]},
+  },
 }
 
 -- create augroups
