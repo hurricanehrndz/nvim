@@ -28,7 +28,7 @@ end
 api.nvim_set_var("completion_enable_snippet", "UltiSnips")
 
 -- automaitcally change sources when no completion item found
-api.nvim_set_var("completion_auto_change_source", 1)
+-- api.nvim_set_var("completion_auto_change_source", 1)
 
 -- completion list
 api.nvim_set_var(
