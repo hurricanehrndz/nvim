@@ -32,3 +32,13 @@ api.nvim_set_keymap("n",  "<space>bd",  "<cmd>bd!<cr>",  {noremap = true})
 -- lsp sources maps
 api.nvim_set_keymap("i",  "<A-h>",  "<Plug>(completion_next_source)",  {noremap = true})
 api.nvim_set_keymap("i",  "<A-l>",  "<Plug>(completion_prev_source)",  {noremap = true})
+
+-- floatterm
+api.nvim_set_keymap("n",  "<F7>",   [[<cmd>FloatermNew<CR>]],                {silent   =   true})
+api.nvim_set_keymap("t",  "<F7>",   [[<C-\><C-n><cmd>FloatermNew<CR>]],      {silent   =   true})
+api.nvim_set_keymap("n",  "<F6>",   [[<cmd>FloatermPrev<CR>]],               {silent   =   true})
+api.nvim_set_keymap("t",  "<F6>",   [[<C-\><C-n><cmd>FloatermPrev<CR>]],     {silent   =   true})
+api.nvim_set_keymap("n",  "<F8>",   [[<cmd>FloatermNext<CR>]],               {silent   =   true})
+api.nvim_set_keymap("t",  "<F8>",   [[<C-\><C-n><cmd>FloatermNext<CR>]],     {silent   =   true})
+api.nvim_set_keymap("n",  "<F12>",  [[<cmd>FloatermToggle<CR>]],             {silent   =   true})
+api.nvim_set_keymap("t",  "<F12>",  [[<C-\><C-n><cmd>FloatermToggle<CR>]],   {silent   =   true})

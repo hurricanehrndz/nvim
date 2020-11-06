@@ -23,6 +23,7 @@ vim.cmd("Plug 'junegunn/fzf.vim'")
 vim.cmd("Plug 'nvim-lua/popup.nvim'")
 vim.cmd("Plug 'nvim-lua/plenary.nvim'")
 vim.cmd("Plug 'nvim-lua/telescope.nvim'")
+vim.cmd("Plug 'voldikss/vim-floaterm'")
 
 -- Language Syntax Support
 vim.cmd("Plug 'sheerun/vim-polyglot'")
