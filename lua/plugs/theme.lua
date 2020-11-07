@@ -5,9 +5,9 @@ if fn['has']('termguicolors') then
   vim.o.termguicolors = true
 end
 
--- enable italics
-api.nvim_set_var("onedark_terminal_italics", 1)
+api.nvim_set_var("ayucolor", "mirage")
 
 vim.o.background = 'dark'
-vim.cmd('syntax on')
-vim.cmd('colorscheme onedark')
+vim.cmd("syntax on")
+vim.cmd("colorscheme ayu")
+vim.cmd("hi Normal guibg=NONE ctermbg=NONE")

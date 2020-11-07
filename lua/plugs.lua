@@ -6,6 +6,7 @@ fn["plug#begin"](fn.stdpath('data') .. "/plugged")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 
 -- theme and look
+vim.cmd("Plug 'ayu-theme/ayu-vim'")
 vim.cmd("Plug 'joshdick/onedark.vim'")
 vim.cmd("Plug 'ryanoasis/vim-devicons'")
 
@@ -39,6 +40,9 @@ vim.cmd("Plug 'airblade/vim-gitgutter'")
 vim.cmd("Plug 'lambdalisue/suda.vim'")
 vim.cmd("Plug 'mattn/emmet-vim'")
 vim.cmd("Plug 'godlygeek/tabular'")
+
+-- must have/whynots?
+vim.cmd("Plug 'norcalli/nvim-colorizer.lua'")
 
 fn["plug#end"]()
 
