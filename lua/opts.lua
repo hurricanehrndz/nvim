@@ -35,6 +35,8 @@ vim.o.sidescrolloff = 10
 vim.o.listchars = [[tab:→ ,eol:↲,space:␣,trail:•,extends:⟩,precedes:⟨]]
 -- set max with of text
 vim.o.textwidth = 78
+-- set selection to exclusive
+vim.o.selection = "exclusive"
 
 -->> buffer-scoped options <<--
 bo.shiftwidth = 2
