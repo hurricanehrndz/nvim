@@ -18,7 +18,7 @@ vim.cmd("Plug 'steelsojka/completion-buffers'")
 vim.cmd("Plug 'SirVer/ultisnips'")
 
 -- telescope w/ fzf command
-vim.cmd("Plug 'junegunn/fzf', {'dir': '~/.local/share/fzf', 'do': { -> fzf#install() }}")
+vim.cmd("Plug 'junegunn/fzf', {'do': { -> fzf#install() }}")
 vim.cmd("Plug 'junegunn/fzf.vim'")
 vim.cmd("Plug 'nvim-lua/popup.nvim'")
 vim.cmd("Plug 'nvim-lua/plenary.nvim'")
