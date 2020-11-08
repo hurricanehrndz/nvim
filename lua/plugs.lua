@@ -52,3 +52,6 @@ require("plugs.fzf")
 require("plugs.prettier")
 require("plugs.emmet")
 require("plugs.telescope")
+
+-- turn on plugs
+require("colorizer").setup()
