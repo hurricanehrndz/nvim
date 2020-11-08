@@ -9,6 +9,8 @@ vim.wo.relativenumber = true
 vim.wo.signcolumn = "yes"
 -- disable line wrap
 vim.wo.wrap = false
+-- enable color column
+vim.wo.colorcolumn = "80"
 
 -->> edior options <<--
 -- abandon buffer when unloading
