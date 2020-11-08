@@ -11,3 +11,4 @@ vim.o.background = 'dark'
 vim.cmd("syntax on")
 vim.cmd("colorscheme ayu")
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
+vim.cmd("hi SignColumn guibg=NONE ctermbg=NONE")
