@@ -9,5 +9,4 @@ local vim_plug_install_cmd =
 local plug_exists = fn.systemlist('find ' .. vim_plug_path .. ' 2>/dev/null')
 if (#plug_exists == 0) then
   vim.cmd('silent ! ' .. vim_plug_install_cmd)
-  vim.cmd("PlugInstall")
 end
