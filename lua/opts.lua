@@ -39,9 +39,9 @@ vim.o.listchars = [[tab:→ ,eol:↲,space:␣,trail:•,extends:⟩,precedes:�
 vim.o.textwidth = 78
 -- set selection to exclusive
 vim.o.selection = "exclusive"
+vim.o.smartcase = true
 
 -->> buffer-scoped options <<--
 bo.shiftwidth = 2
 bo.expandtab = true
 bo.smartindent = true
-bo.smartcase = true
