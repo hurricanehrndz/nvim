@@ -2,7 +2,6 @@ local fn = vim.fn
 
 local plugged_path = fn.stdpath('data') .. "/plugged"
 fn["plug#begin"](plugged_path)
-
 -- completion
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
 
@@ -46,7 +45,6 @@ vim.cmd("Plug 'rafcamlet/nvim-luapad'")
 -- must have/whynots?
 vim.cmd("Plug 'norcalli/nvim-colorizer.lua'")
 fn["plug#end"]()
-
 
 local plugged_exists = fn.systemlist('find ' .. plugged_path .. ' 2>/dev/null')
 if (#plugged_exists == 0) then
