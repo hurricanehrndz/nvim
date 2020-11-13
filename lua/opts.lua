@@ -42,6 +42,6 @@ vim.o.selection = "exclusive"
 vim.o.smartcase = true
 
 -->> buffer-scoped options <<--
-bo.shiftwidth = 2
+bo.shiftwidth = 4
 bo.expandtab = true
 bo.smartindent = true
