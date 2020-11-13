@@ -40,6 +40,8 @@ vim.o.textwidth = 78
 -- set selection to exclusive
 vim.o.selection = "exclusive"
 vim.o.smartcase = true
+-- enable undofile
+vim.o.undofile = true
 
 -->> buffer-scoped options <<--
 bo.shiftwidth = 4
