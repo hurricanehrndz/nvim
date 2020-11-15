@@ -47,33 +47,14 @@ api.nvim_set_var(
   }
 )
 
--- complete using various sources
--- do I want maps to trigger completion change
---[[
-"c-n" : i_CTRL-N
-"c-p" : i_CTRL-P
-"cmd" : i_CTRL-X_CTRL-V
-"defs": i_CTRL-X_CTRL-D
-"dict": i_CTRL-X_CTRL-K
-"file": i_CTRL-X_CTRL-F
-"incl": i_CTRL-X_CTRL-I
-"keyn": i_CTRL-X_CTRL-N
-"keyp": i_CTRL-X_CTRL-P
-"line": i_CTRL-X_CTRL-L
-"spel": i_CTRL-X_s
-"tags": i_CTRL-X_CTRL-]
-"thes": i_CTRL-X_CTRL-T
-"user": i_CTRL-X_CTRL-U
-]]--
-
 -- configure tsserver
-require("nvim_lsp").tsserver.setup{on_attach=on_attach_vim}
+require("lspconfig").tsserver.setup{on_attach=on_attach_vim}
 -- python language server
-require("nvim_lsp").pyls.setup{on_attach=on_attach_vim}
+require("lspconfig").pyls.setup{on_attach=on_attach_vim}
 -- bash language server
-require("nvim_lsp").bashls.setup{on_attach=on_attach_vim}
+require("lspconfig").bashls.setup{on_attach=on_attach_vim}
 -- lua language server
-require("nvim_lsp").sumneko_lua.setup{
+require("lspconfig").sumneko_lua.setup{
   on_attach=on_attach_vim,
   settings = {
     Lua = {
