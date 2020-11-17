@@ -14,13 +14,12 @@ vim.cmd("Plug 'ryanoasis/vim-devicons'")
 -- Plugs: https://github.com/nvim-lua/completion-nvim
 vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/completion-nvim'")
-vim.cmd("Plug 'nvim-lua/diagnostic-nvim'")
 vim.cmd("Plug 'steelsojka/completion-buffers'")
 vim.cmd("Plug 'SirVer/ultisnips'")
+vim.cmd("Plug 'tjdevries/nlua.nvim'")
+vim.cmd("Plug 'nvim-lua/lsp-status.nvim'")
 
--- telescope w/ fzf command
-vim.cmd("Plug 'junegunn/fzf', {'do': { -> fzf#install() }}")
-vim.cmd("Plug 'junegunn/fzf.vim'")
+-- telescope
 vim.cmd("Plug 'nvim-lua/popup.nvim'")
 vim.cmd("Plug 'nvim-lua/plenary.nvim'")
 vim.cmd("Plug 'nvim-lua/telescope.nvim'")
@@ -42,6 +41,9 @@ vim.cmd("Plug 'mattn/emmet-vim'")
 vim.cmd("Plug 'godlygeek/tabular'")
 vim.cmd("Plug 'rafcamlet/nvim-luapad'")
 
+-- tmux and vim love
+vim.cmd("Plug 'christoomey/vim-tmux-navigator'")
+
 -- must have/whynots?
 vim.cmd("Plug 'norcalli/nvim-colorizer.lua'")
 fn["plug#end"]()
@@ -53,10 +55,8 @@ end
 
 -- import plugs settings
 require("plugs.theme")
-require("plugs.fzf")
 require("plugs.prettier")
 require("plugs.emmet")
-require("plugs.telescope")
 
 -- turn on plugs
 require("colorizer").setup()

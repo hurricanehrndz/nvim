@@ -1,6 +1,6 @@
 require('plugsmgr')
 require('opts')
-require('keys')
+require('keymaps')
 require('autocmds')
 require('plugs')
 require('lsp_config')
