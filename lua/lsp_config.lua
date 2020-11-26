@@ -134,9 +134,10 @@ lspconfig.hls.setup({
 
 -- bash language server
 lspconfig.bashls.setup({
-  on_attach=custom_lsp_attach,
+  on_attach = custom_lsp_attach,
 })
 
+-- clangd language server
 lspconfig.clangd.setup({
   cmd = {"clangd", "--background-index"},
   handlers = lsp_status.extensions.clangd.setup(),
