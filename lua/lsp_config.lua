@@ -127,6 +127,11 @@ lspconfig.yamlls.setup({
   on_attach = custom_lsp_attach
 })
 
+-- haskell language server
+lspconfig.hls.setup({
+  on_attach = custom_lsp_attach,
+})
+
 -- bash language server
 lspconfig.bashls.setup({
   on_attach=custom_lsp_attach,
