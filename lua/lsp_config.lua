@@ -129,6 +129,8 @@ lspconfig.yamlls.setup({
 
 -- haskell language server
 lspconfig.hls.setup({
+  cmd = { "haskell-language-server-wrapper", "--lsp" },
+  filetypes = { "haskell", "lhaskell" },
   on_attach = custom_lsp_attach,
 })
 
@@ -141,7 +143,7 @@ lspconfig.bashls.setup({
 lspconfig.clangd.setup({
   cmd = {"clangd", "--background-index"},
   handlers = lsp_status.extensions.clangd.setup(),
-  on_attach = custom_attach,
+  on_attach = custom_lsp_attach,
 })
 
 -- enable diagnostics
